@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9e3f0; /* Soft pink background */
+      color: #5c5470; /* Gentle purple for text */
+    }
+
+    /* Header styling */
+    header {
+      background-color: #ff9a9e; /* Light pink */
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    /* Navbar styling */
+    nav {
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ff6f91; /* Darker pink on hover */
+      border-radius: 5px;
+    }
+
+    /* Section styling */
+    section {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff; /* White section background */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #5c5470; /* Purple for headings */
+      margin-bottom: 10px;
+    }
+
+    /* About section */
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .about img {
+      width: 220px;
+      border-radius: 50%;
+      margin-right: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .about p {
+      flex: 1;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #6d6875;
+    }
+
+    /* Portfolio section */
+    .projects {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      background-color: #ffc1cc; /* Soft peach for project cards */
+      padding: 20px;
+      margin: 10px;
+      width: 280px;
+      text-align: center;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .project:hover {
+      transform: translateY(-10px); /* Lift effect on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .project h3 {
+      margin-top: 10px;
+      font-size: 1.4rem;
+      color: #ff6f91; /* Slightly darker pink for project titles */
+    }
+
+    /* Contact form */
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #ff6f91;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #ff467e; /* Brighter pink on hover */
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #ff9a9e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about img {
+        margin: 0 auto 20px;
+      }
+
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header section -->
+  <header>
+    <h1>Syeda Hina Mukhtar</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="Hina.jpg" alt="My Photo">
+      <p>
+        Hello! I am Syeda Hina Mukhtar, a Software Engineering student with expertise in UX Design and a passion for developing creative solutions. I specialize in building modern, responsive web applications and enjoy working with technologies like Flutter, Firebase, TensorFlow Lite, and more. This is my personal portfolio where I showcase some of my projects and skills.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="ar.jpg" alt="Project 1">
+        <h3>AR Magic Lens</h3>
+        <p>An AR-based object detection app for kids to help them learn object names and pronunciation using TensorFlow Lite and Flutter.</p>
+      </div>
+      <div class="project">
+        <img src="cab.jpg" alt="Project 2">
+        <h3>PaxiPakista App</h3>
+        <p>A user-friendly only women travelling app that helps users travel safely with an intuitive interface.</p>
+      </div>
+      <div class="project">
+        <img src="port.jpg" alt="Project 3">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website built with HTML, CSS, and JavaScript showcasing my skills, projects, and experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Syeda Hina Mukhtar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
